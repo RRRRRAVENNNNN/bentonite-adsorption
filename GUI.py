@@ -39,4 +39,4 @@ if st.button('Predict', type='primary'):
     input_data = np.array([feature_values])
     input_data_scaled = ss.transform(input_data)
     prediction = model.predict(input_data_scaled)
-    st.success(f'Predicted heavy metal adsorption capacity: {prediction[0]:.2f} mg/L', icon="✅")
+    st.success(f'Predicted heavy metal adsorption capacity: {prediction[0]:.2f} mg/g', icon="✅")
